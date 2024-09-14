@@ -7,9 +7,9 @@ let currentPointIndex = 0;
 let totalPoints = 0;
 let map;
 let pointMarker;
-
+let url = 'https://raw.githubusercontent.com/ortutayzoltan/geofun/main/test.json'
 // Fetch the game data from the URL
-fetch('http://localhost:8000/game-data') // Replace with your actual URL
+fetch(url) // Replace with your actual URL
     .then(response => response.json())
     .then(data => {
         gameData = data;
