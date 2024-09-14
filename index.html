@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geocaching Game</title>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        #message, #question-section {
+            margin-top: 10px;
+        }
+    </style>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="map"></div>
+    <div id="message"></div>
+    <div id="question-section" style="display: none;">
+        <p id="question-text"></p>
+        <input type="number" id="answer-input" placeholder="Enter your answer">
+        <button id="submit-answer">Submit Answer</button>
+    </div>
+    <!-- Include Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
