@@ -48,6 +48,7 @@ function startGame() {
             position => {
                 const userLat = position.coords.latitude;
                 const userLng = position.coords.longitude;
+                console.log(userLat, userLng);
                 checkUserPosition(userLat, userLng);
             },
             error => {
